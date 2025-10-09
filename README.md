@@ -1,4 +1,3 @@
-
 # KJV Bible App
 
 A modern Bible reading application built with Next.js, featuring the King James Version (KJV) with powerful search capabilities, personal favorites, topic organization, and book exploration features.
@@ -6,22 +5,26 @@ A modern Bible reading application built with Next.js, featuring the King James 
 ## Features
 
 ### 📖 Bible Reading
+
 - **Complete KJV Bible**: Access to all 66 books of the Bible
 - **Chapter Navigation**: Easy navigation through books and chapters
 - **Verse Display**: Clean, readable verse presentation
 - **Book Explorer**: Browse all books organized by testament
 
 ### 🔍 Search & Discovery
+
 - **Verse Search**: Search across the entire Bible text
 - **Real-time Results**: Instant search results as you type
 - **Context Navigation**: Jump from search results to full chapters
 
 ### ⭐ Personal Features
+
 - **Favorites**: Save your favorite verses for quick access
 - **Topics**: Create custom topic collections with related verses
 - **Organized Storage**: Keep your spiritual insights organized
 
 ### 🎨 Modern UI
+
 - **Responsive Design**: Works seamlessly on desktop and mobile
 - **Dark/Light Theme**: Built with theme support
 - **Clean Interface**: Distraction-free reading experience
@@ -46,12 +49,14 @@ A modern Bible reading application built with Next.js, featuring the King James 
 ## Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd kjv-bible-app
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
@@ -59,6 +64,7 @@ A modern Bible reading application built with Next.js, featuring the King James 
 3. **Set up environment variables**
 
    Create a `.env.local` file in the root directory:
+
    ```env
    NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
@@ -67,6 +73,7 @@ A modern Bible reading application built with Next.js, featuring the King James 
 4. **Set up Supabase Database**
 
    Your Supabase database should have the following tables:
+
    - `bible_books`: Contains book information with columns like `book_id`, `book_name`, `testament`, `seq_number`
    - `bible_books_and_verses`: Contains verse data with columns like `book_name`, `book_chapter`, `verse_number`, `verse_text`
 
@@ -111,31 +118,41 @@ src/
 ## Key Components
 
 ### BibleHeader
+
 Main navigation component with:
+
 - Tab navigation (Read, Books, Favorites, Topics)
 - Search functionality
 - Book and chapter selection
 
 ### VerseDisplay
+
 Displays Bible verses with:
+
 - Favorite toggle functionality
 - Context expansion
 - Clean verse formatting
 
 ### Favorites
+
 Manages favorite verses:
+
 - Add/remove favorites
 - Quick access to saved verses
 - Persistent storage
 
 ### Topics
+
 Topic organization system:
+
 - Create custom topics
 - Add verses to topics
 - Organize spiritual insights
 
 ### BooksExplorer
+
 Bible book navigation:
+
 - Testament organization
 - Quick book access
 - Chapter navigation
@@ -145,6 +162,7 @@ Bible book navigation:
 The application expects these Supabase tables:
 
 ### bible_books
+
 ```sql
 - book_id (integer)
 - book_name (text)
@@ -153,6 +171,7 @@ The application expects these Supabase tables:
 ```
 
 ### bible_books_and_verses
+
 ```sql
 - book_name (text)
 - book_chapter (integer)
@@ -174,7 +193,12 @@ Original Figma design: https://www.figma.com/design/0CREXjTZ97OM6BpT8VlzQQ/Bible
 
 ## License
 
-This project is open source. Please ensure proper attribution when using Bible text content.
+© 2025 Premier Dev Solutions. All Rights Reserved.
+
+This project is proprietary software. Viewing for educational purposes only.
+Commercial use, modification, or distribution requires written permission.
+
+Contact: will@predevsol.com
 
 ## Acknowledgments
 
@@ -182,4 +206,3 @@ This project is open source. Please ensure proper attribution when using Bible t
 - UI components powered by Radix UI
 - Icons by Lucide React
 - Database hosting by Supabase
-  
