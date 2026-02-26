@@ -2,6 +2,10 @@
 
 A modern Bible reading application built with Next.js, featuring the King James Version (KJV) with powerful search capabilities, personal favorites, topic organization, and book exploration features.
 
+## Live Demo
+
+🌐 **[https://kjv-bible-app.vercel.app/](https://kjv-bible-app.vercel.app/)**
+
 ## Features
 
 ### 📖 Bible Reading
