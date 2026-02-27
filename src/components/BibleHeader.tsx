@@ -97,7 +97,7 @@ export function BibleHeader({
         <div className="flex items-center gap-4 mb-4">
           <div className="flex items-center gap-2">
             <Book className="h-6 w-6 text-primary" />
-            <h1 className="text-2xl font-semibold">KJV Bible API</h1>
+            <h1 className="text-2xl font-semibold">KJV Bible App</h1>
           </div>
         </div>
 

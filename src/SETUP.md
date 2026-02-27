@@ -1,4 +1,4 @@
-# KJV Bible API - Setup Guide
+# KJV Bible App - Setup Guide
 
 ## Prerequisites
 
@@ -14,8 +14,8 @@ Before you begin, ensure you have the following installed on your machine:
 
 ```bash
 # Create a new directory for your project
-mkdir kjv-bible-api
-cd kjv-bible-api
+mkdir kjv-bible-app
+cd kjv-bible-app
 ```
 
 ### Step 2: Initialize React + TypeScript Project
@@ -172,7 +172,7 @@ Visit the provided localhost URL (usually `http://localhost:3000` or `http://loc
 
 ```bash
 # Create Next.js project with all modern features
-npx create-next-app@latest kjv-bible-api \
+npx create-next-app@latest kjv-bible-app \
   --typescript \
   --tailwind \
   --eslint \
@@ -180,7 +180,7 @@ npx create-next-app@latest kjv-bible-api \
   --src-dir \
   --import-alias "@/*"
 
-cd kjv-bible-api
+cd kjv-bible-app
 ```
 
 ### Step 2: Install Additional Dependencies
@@ -324,7 +324,7 @@ Open VS Code and install these extensions:
 Create `.env.local` (Next.js) or `.env` (React):
 
 ```env
-# Bible API Configuration
+# Bible App Configuration
 NEXT_PUBLIC_BIBLE_API_URL=https://your-bible-api.com/api
 NEXT_PUBLIC_API_KEY=your-api-key-here
 
@@ -407,7 +407,7 @@ build
 
 # Initial commit
 git add .
-git commit -m "Initial commit: KJV Bible API application"
+git commit -m "Initial commit: KJV Bible App application"
 ```
 
 ---
@@ -444,4 +444,4 @@ Once your application is running:
 3. **Add more features** like user authentication, cloud storage, or additional Bible translations
 4. **Deploy your application** to platforms like Vercel, Netlify, or your preferred hosting service
 
-Your KJV Bible API application should now be fully functional with reading, favorites, and topics management features!
+Your KJV Bible App application should now be fully functional with reading, favorites, and topics management features!
